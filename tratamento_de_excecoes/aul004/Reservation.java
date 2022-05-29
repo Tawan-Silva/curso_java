@@ -37,12 +37,21 @@ public class Reservation {
 	// getTime() retorna quatidade de milissegundos
 	public long duration() {
 		long diff = checkOut.getTime() - checkIn.getTime();
-		return TimeUnit.DAYS.convert(diff, TimeUnit.MICROSECONDS); // converte milissegundos para dias 
+		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS); // converte milissegundos para dias 
 	}
 	
-	public void updateDates(Date checkIn, Date checkOut) {
+	public String updateDates(Date checkIn, Date checkOut) {
+		Date now = new Date();
+		if (checkIn.before(now) || checkOut.before(now)) {
+			return "Reservation dates for update must be future dates";
+		}
+		if (!checkOut.after(checkIn)) {
+			return "Check-out date must be after check-in date";
+		}
+		
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
+		return null;
 	}
 	
 	@Override // sobrescrita / sobreposição
@@ -51,7 +60,7 @@ public class Reservation {
 				+ roomNumber
 				+ ", check-in: " 
 				+ sdf.format(checkOut)
-				+ ", check-out"
+				+ ", check-out "
 				+ sdf.format(checkOut)
 				+ ", "
 				+ duration()
