@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="estrutura_sequencial"/>
+	<classpathentry kind="src" path="estrutura_condicional"/>
+	<classpathentry kind="src" path="estruturas_repetitivas"/>
+	<classpathentry kind="src" path="outros_topicos_basicos"/>
+	<classpathentry kind="src" path="introducao_orientada_a_objetos"/>
+	<classpathentry kind="src" path="constructor_this_sobrecarga_encapsulamento"/>
+	<classpathentry kind="src" path="memoria_arrays_listas"/>
+	<classpathentry kind="src" path="topicos_especiais"/>
+	<classpathentry kind="src" path="enumeracao_e_composicao"/>
+	<classpathentry kind="src" path="heranca_polimorfismo"/>
+	<classpathentry kind="src" path="tratamento_de_excecoes"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
