@@ -16,5 +16,9 @@
 	<classpathentry kind="src" path="enumeracao_e_composicao"/>
 	<classpathentry kind="src" path="heranca_polimorfismo"/>
 	<classpathentry kind="src" path="tratamento_de_excecoes"/>
+	<classpathentry kind="src" path="trabalhando_com_arquivos"/>
+	<classpathentry kind="src" path="interfaces"/>
+	<classpathentry kind="src" path="generics_set_map"/>
+	<classpathentry kind="src" path="prog_funcional_e_expressoes_lambda"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
